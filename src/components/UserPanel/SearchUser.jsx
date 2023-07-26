@@ -57,7 +57,7 @@ function SearchUser() {
                     <ul className='search-result-div'>
                         {
                             searchResult && searchResult.map((result)=> {
-                                return <li onClick={()=>handleSearch(result)} key={result.id} className='search-item'><img src={"http://localhost:5555/userImages/"+result.image+".jpg"} alt="name" />{result.username}</li>
+                                return <li onClick={()=>handleSearch(result)} key={result.id} className='search-item'><img src={BASE_URL_IMAGE+result.image+".jpg"} alt="name" />{result.username}</li>
                             })
                         }
                     </ul>
