@@ -1,6 +1,6 @@
 {
   "name": "chat-app",
-  "homepage": "https://shubratodn.github.io/private-chat-app-react/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
