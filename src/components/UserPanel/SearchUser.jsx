@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import userImage from '../../assets/images/user.jpg'
 import { searchUser } from '../../services/userServices';
 import ActiveChatContext from '../../context/ActiveChatContext';
-
+import { BASE_URL_IMAGE } from '../../services/Util';
 function SearchUser() {
 
     const [searchQuery, setSearchQuery] = useState("");    
