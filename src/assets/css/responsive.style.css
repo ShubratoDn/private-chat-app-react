@@ -1,0 +1,282 @@
+@media (max-width:1200px) {
+    .chat-front {
+        width: 50%;
+    }
+
+    .conversation-container {
+        width: 50%;
+    }
+
+    .conversation {
+        width: 98%;
+    }
+
+
+    /* ===================================================*/
+    /* receiver info container design for responive */
+    /* ===================================================*/
+    #toggleReceiverContainerButton {
+        display: none;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        font-size: 50px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        line-height: 40px;
+        background-color: black;
+        z-index: 10;
+    }
+
+    .conversation-container {
+        position: relative;
+    }
+
+    .receiver-info-container {
+        width: 100% !important;
+        height: 00%;
+        position: absolute;
+        /* /* margin-top: 10px; */
+        backdrop-filter: blur(10px);
+    }
+
+    /* navbar design starts */
+    .nav-item {
+        padding: 0 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+
+    .nav-user div span:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .nav-user div span:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .nav-user-img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .logo-img {
+        width: 70px;
+    }
+
+    .chat-nav-item {
+        padding: 10px 20px;
+    }
+}
+
+
+/*  */
+@media(max-width:1024px) {
+
+    /* navbar design starts from here */
+    .navbar-nav {
+        background-color: #1b1b1b3f;
+        backdrop-filter: blur(20px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        z-index: 10;
+        justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0px 20px;
+        padding: 0;
+    }
+
+
+
+    /* hiding conversation */
+    #conversation-container {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;        
+        z-index: 9999;
+    }
+
+    .chat-back{
+        display: block;
+    }
+
+    .receiver-info-container {
+        position: absolute;
+        top: 0;
+    }
+
+
+    .chat-nav {
+        grid-area: nav;
+    }
+
+    .search-box-div {
+        grid-area: search;
+    }
+
+    .chat-list-div {
+        grid-area: chats;
+    }
+
+    .chat-front {
+        display: grid;
+        grid-template-areas:
+            'search'
+            'nav'
+            'chats'
+        ;
+    }
+
+    .search-box-div {
+        width: 100vw;
+    }
+
+    .chat-nav {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .navbar {
+        width: 100vw;
+    }
+
+    .chat-nav-ul {
+        display: flex;
+        overflow-x: scroll;
+        padding: 10px 20px;
+    }
+
+    .chat-nav-ul .chat-nav-item {
+        min-width: fit-content;
+        border-radius: 10px;
+        margin: 0 10px;
+        padding: 20px 15px;
+    }
+
+    .chat-list-div {
+        width: 100vw;
+    }
+
+    /* scroll bar design*/
+    .chat-nav-ul::-webkit-scrollbar {
+        height: 0px;
+    }
+
+    .chat-list-div {
+        margin-top: 30px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .chat-nav-ul {
+        padding: 10px 20px;
+    }
+
+    .chat-nav-item {
+        padding: 10px 20px !important;
+        margin: 0px !important;
+
+    }
+
+    .chat-nav-item a {
+        font-size: 14px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .chat-nav-item i {
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        line-height: 80px;
+    }
+
+    .navbar-nav .nav-item a {
+        font-size: 12px;
+    }
+
+    .nav-user span {
+        font-size: 12px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 525px) {
+    .navbar-nav .nav-item {
+        line-height: 80px;
+        margin: 10px;
+    }
+
+    .navbar-nav .nav-item a {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .navbar {
+        padding: 2%;
+    }
+
+    .navbar .logo-text {
+        font-size: 16px;
+    }
+
+    .nav-user img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .nav-user span:nth-child(1) {
+        font-size: 11px !important;
+    }
+
+    .nav-user span:nth-child(2) {
+        font-size: 10px !important;
+        text-overflow: ellipsis;
+    }
+
+    .navbar-nav .nav-item {
+        line-height: 80px;
+        margin: 0 25px;
+
+    }
+
+    .navbar-nav .nav-item a {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-item span {
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .navbar .logo-img {
+        width: 60px;
+    }
+
+}
